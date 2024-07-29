@@ -9,19 +9,22 @@ const ContactMe = ({ data, location }) => (
   <Layout
     location={location}
     image={data.coverImage.childImageSharp.fluid}
-    imageTitle={`“${data.coverImage.title}” by ${data.coverImage.credit}`}
+    title="small plants"
+    // imageTitle={`“${data.coverImage.title}” by ${data.coverImage.credit}`}
     imageBackgroundColor="#F0C450"
   >
     <PageTitle>accounts</PageTitle>
-    <FloatingImage
+    {/* <FloatingImage
+      title="thinking about something new"
       imageMobile={data.floatingImageMobile.childImageSharp.fixed}
       imageDesktop={data.floatingImageMobile.childImageSharp.fixed}
       // title={`“${data.floatingImage.title}” by ${data.floatingImage.credit}`}
       backgroundColor="#DB3225"
-    />
+    /> */}
     <p>
       I've been prowling around <a href="https://github.com/nenjotsu" alt="nenjotsu github's account">GitHub</a> like it's my own personal treasure trove, hunting down free OpenAI APIs and tokens. Also, I've been uploading some of my mad scientist programming experiments. Because, you know, sharing is caring—and collaboration is the key to not accidentally blowing things up.
     </p>
+    <p>Feel free to drop me a message on <a href="https://www.linkedin.com/in/renenjo-valente-4435b941/" alt="linkedin page">LinkedIn</a>, and we can chat about potential solutions.</p>
 
     {/* <Img
       fluid={data.fullWidthImage.localFile.childImageSharp.fluid}
