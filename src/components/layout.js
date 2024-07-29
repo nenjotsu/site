@@ -4,7 +4,7 @@ import styled from "@emotion/styled"
 
 import Navigation from "./navigation"
 import { rhythm } from "../utils/typography"
-import logo from "../images/monogram.svg"
+import logo from "../images/profile-pic.svg"
 import { mq, elevation, offset, offsetXxl, gutter } from "../utils/presets"
 
 const Container = styled(`div`)`
@@ -59,12 +59,12 @@ const Main = styled(`main`)`
 `
 
 const LogoLink = styled(`a`)`
-  height: ${rhythm(0.875)};
+  height: ${rhythm(1.875)};
   line-height: 1;
   position: fixed;
   top: ${gutter.tablet};
   right: ${gutter.tablet};
-  width: ${rhythm(0.875)};
+  width: ${rhythm(1.875)};
 
   && {
     background: transparent;
@@ -99,38 +99,17 @@ const Layout = ({ children, image, imageTitle, imageBackgroundColor }) => (
     <Navigation />
     <Main>
       {children}
-      <h2>Documentation & related links</h2>
+      {/* <h1>blogs</h1>
       <ul>
         <li>
-          See the
-          {` `}
           <a href="https://www.gatsbyjs.org/packages/gatsby-image/">
             <code>gatsby-image</code> project README
           </a>
-          {` `} for documentation on using the plugin
         </li>
-        <li>
-          Read the docs:
-          <br />
-          <a href="https://www.gatsbyjs.org/docs/using-gatsby-image/">
-            Using gatsby-image to prevent image bloat
-          </a>
-          <br />
-          <a href="https://www.gatsbyjs.org/packages/gatsby-plugin-sharp/">
-            Using fragments in gatsby-plugin-sharp
-          </a>
-        </li>
-        <li>
-          View the <code>gatsby-transformer-sharp</code> example at
-          {` `}
-          <a href="https://image-processing.gatsbyjs.org/">
-            <code>image-processing.gatsbyjs.org</code>
-          </a>
-        </li>
-      </ul>
+      </ul> */}
     </Main>
-    <LogoLink href="https://www.gatsbyjs.org/">
-      <Logo src={logo} alt="Gatsby" />
+    <LogoLink href="https://github.com/nenjotsu/">
+      <Logo src={logo} alt="nenjotsu" />
     </LogoLink>
   </Container>
 )

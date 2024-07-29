@@ -27,12 +27,12 @@ const linkStyle = css`
       ${colors.gatsby} 50%
     );
     background-size: 200% 200%;
-    color: rgba(102, 51, 153, 1);
+    color: #407086;
     -webkit-background-clip: text;
 
     &:hover {
       background-position: 0 0;
-      color: rgba(102, 51, 153, 0);
+      color: #4fadab;
     }
   }
 `
@@ -111,7 +111,7 @@ const NavList = styled(`ul`)`
 
   ${mq.tablet} {
     max-width: 30rem;
-    margin-left: -7.5rem;
+    margin-left: 0rem;
     white-space: initial;
   }
 `
@@ -178,23 +178,23 @@ const Navigation = () => (
           ${linkStyle};
         `}
       >
-        Using Gatsby Image
+        nenjotsu site
       </Link>
     </SiteTitle>
     <Nav aria-label="Primary Navigation">
       <NavList>
-        <NavItem to="/blur-up/" title="Blur Up" />
-        <NavItem to="/background-color/" title="Background Color" />
-        <NavItem to="/traced-svg/" title="Traced SVG" />
-        <NavItem to="/prefer-webp/" title="WebP" />
+        {/* <NavItem to="/blur-up/" title="things I've learned" />
+        <NavItem to="/traced-svg/" title="my works" /> */}
+        <NavItem to="/contact-me/" title="contact me" />
+        <NavItem to="/who-am-i/" title="who am I" />
         <NavListItem>
           <a
-            href="https://www.gatsbyjs.org/packages/gatsby-image/"
+            href="https://github.com/nenjotsu"
             css={css`
               ${linkStyle};
             `}
           >
-            Docs
+            github
             {` `}
             <ExternalLinkIcon />
           </a>

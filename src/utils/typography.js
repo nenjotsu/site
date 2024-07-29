@@ -3,17 +3,20 @@ import Typography from "typography"
 import { colors, animation } from "./presets"
 
 const bodyFontFamily = [
-  `-apple-system`,
-  `BlinkMacSystemFont`,
-  `Segoe UI`,
-  `Roboto`,
-  `Oxygen`,
-  `Ubuntu`,
-  `Cantarell`,
-  `Fira Sans`,
-  `Droid Sans`,
-  `Helvetica Neue`,
-  `Arial`,
+  // `-apple-system`,
+  // `BlinkMacSystemFont`,
+  // `Segoe UI`,
+  // `Patua One`,
+  //   `Cabin Condensed`,
+  // `Roboto`,
+  // `Oxygen`,
+  // `Ubuntu`,
+  // `Cantarell`,
+  // `Fira Sans`,
+  // `Droid Sans`,
+  // `Helvetica Neue`,
+  // `Arial`,
+  'Georgia', 'serif',
   `sans-serif`,
 ]
 
@@ -27,15 +30,18 @@ const _options = {
   bodyColor: `#26222a`,
   scaleRatio: 1.25,
   accentColor: colors.gatsby,
-  monospaceFontFamily: [
-    `SFMono-Regular`,
-    `Menlo`,
-    `Monaco`,
-    `Consolas`,
-    `Liberation Mono`,
-    `Courier New`,
-    `monospace`,
+  encodeSansFontFamily: [
+    'Georgia', 'serif',
   ],
+  // monospaceFontFamily: [
+  //   `SFMono-Regular`,
+  //   `Menlo`,
+  //   `Monaco`,
+  //   `Consolas`,
+  //   `Liberation Mono`,
+  //   `Courier New`,
+  //   `monospace`,
+  // ],
   headerFontFamily: bodyFontFamily,
   overrideStyles: ({ rhythm }, options) => {
     return {
@@ -55,7 +61,7 @@ const _options = {
       },
       code: {
         fontSize: `100%`,
-        fontFamily: options.monospaceFontFamily.join(`,`),
+        fontFamily: options.encodeSansFontFamily.join(`,`),
       },
     }
   },

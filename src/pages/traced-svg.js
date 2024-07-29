@@ -56,7 +56,7 @@ export const query = graphql`
         childImageSharp {
           fluid(
             maxWidth: 720
-            traceSVG: { background: "#fff", color: "#663399" }
+            traceSVG: { background: "#fff", color: "#407086" }
           ) {
             ...GatsbyImageSharpFluid_tracedSVG
           }

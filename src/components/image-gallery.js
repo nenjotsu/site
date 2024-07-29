@@ -78,7 +78,7 @@ const Badge = styled(`span`)`
   bottom: 0.625rem;
   border-radius: 0.125rem;
   color: ${options.bodyColor};
-  font-family: ${options.monospaceFontFamily.join(`,`)};
+  font-family: ${options.encodeSansFontFamily.join(`,`)};
   font-size: ${scale(-2).fontSize};
   line-height: 1;
   padding: 0.25rem;

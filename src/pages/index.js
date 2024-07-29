@@ -28,76 +28,23 @@ const Index = ({ data, location }) => (
     imageTitle={`“Black and silver vintage camera” by Alexander Andrews (via unsplash.com)`}
     imageBackgroundColor={colors.ui.whisper}
   >
-    <p>
-      <a href="https://www.gatsbyjs.org/packages/gatsby-image/">gatsby-image</a>
-      {` `}
-      is the official Image component for use in building Gatsby websites. It
-      provides the fastest, most optimized image loading performance possible
-      for Gatsby (and other React) websites.
-    </p>
-    <p>
-      The component requires
-      {` `}
-      <em
-        css={css`
-          font-style: normal;
-          font-weight: bold;
-        `}
-      >
-        no configuration
-      </em>
-      {` `}
-      when used within Gatsby. All image processing is done within Gatsby and
-      official plugins.
-    </p>
-    <p>
-      See the
-      {` `}
-      <a href="https://www.gatsbyjs.org/packages/gatsby-image/">
-        component’s documentation
-      </a>
-      {` `}
-      as well as
-      {` `}
-      <a href="https://github.com/gatsbyjs/gatsby/blob/master/examples/using-gatsby-image/">
-        <FaGithub
-          css={css`
-            position: relative;
-            bottom: -0.125em;
-            background-image: none;
-          `}
-        />
-        {` `}
-        view this site’s source
-      </a>
-      {` `}
-      to learn how to start using gatsby-image on your Gatsby sites.
-    </p>
-    <h2>Out of the box it:</h2>
+    <h2>Welcome, Brilliant Minds!</h2>
+    <p>Hey there, fellow code maestros and tech-savvy adventurers! You've found your way to my little corner of the internet, where the magic of programming meets a dash of humor and some practical know-how. I’m here to add some fun to your tech journey while sharing the insights I’ve gathered over 12 glorious years in this wild ride called programming.</p>
+    <h2>What's Cooking?</h2>
+    <p>In this blog, I’ll be dishing out all the juicy tidbits I’ve recently learned about the art of coding. We’re talking about everything from taming the beast known as C++ to mastering the elegance of Golang. Whether you’re lost in the world of frontend frameworks, swimming in the depths of backend development, or navigating the labyrinth of design patterns, I’ve got your back.</p>
+    <h2>My Street Cred</h2>
+    <p>With over a decade of experience spanning from frontend eye candy to full-stack wizardry, and from backend architecture to DevOps zen, I’ve seen it all. And trust me, I’ve got stories that’ll make you laugh, cry, and wonder how I haven’t turned into a complete robot... yet.</p>
+    <h1>What’s in it for You?</h1>
+    <p>I’ll be sharing:</p>
     <FeatureList>
-      <FeatureListItem>
-        Loads the optimal size of image for each device size and screen
-        resolution
-      </FeatureListItem>
-      <FeatureListItem>
-        Holds the image position while loading so your page doesn’t jump around
-        as images load
-      </FeatureListItem>
-      <FeatureListItem>
-        Uses the “blur-up” effect i.e. it loads a tiny version of the image to
-        show while the full image is loading
-      </FeatureListItem>
-      <FeatureListItem>
-        Alternatively provides a “traced placeholder” SVG of the image.
-      </FeatureListItem>
-      <FeatureListItem>
-        Lazy loads images which reduces bandwidth and speeds the initial load
-        time
-      </FeatureListItem>
-      <FeatureListItem>
-        Uses WebP images if browser supports the format
-      </FeatureListItem>
+      <FeatureListItem><b>Programming Insights:</b> Nuggets of wisdom and ‘aha’ moments about C++, Golang, Javscript and everything in between.</FeatureListItem>
+      <FeatureListItem><b>Frontend Follies:</b> Tales and tips from the visually stunning world of frontend development.</FeatureListItem>
+      <FeatureListItem><b>Backend Banter:</b> Adventures in the land of databases, APIs, and server-side sorcery.</FeatureListItem>
+      <FeatureListItem><b>Design Pattern Drama:</b> Patterns that make your codebase cleaner than a fresh whiteboard after a brainstorming session.</FeatureListItem>
     </FeatureList>
+    <h1>Let’s Get This Party Started!</h1>
+    <p>So, buckle up, buttercup! Get ready for a wild ride through the geekiest realms of programming, sprinkled with a dash of irreverent humor. It’s going to be fun, it’s going to be educational, and it’s going to be the best darn coding journey you’ve ever embarked on.</p>
+    <p>Grab your snacks and let’s code like there’s no tomorrow!</p>
   </Layout>
 )
 
@@ -106,13 +53,13 @@ export default Index
 export const query = graphql`
   query {
     coverImage: file(
-      relativePath: { regex: "/alexander-andrews-260988-unsplash-edited/" }
+      relativePath: { regex: "/landing-img/" }
     ) {
       childImageSharp {
         fluid(
-          maxWidth: 800
+          maxWidth: 720
           quality: 80
-          duotone: { highlight: "#ffffff", shadow: "#663399" }
+          # duotone: { highlight: "#ffffff", shadow: "#407086" }
         ) {
           ...GatsbyImageSharpFluid
         }
