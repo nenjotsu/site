@@ -16,7 +16,7 @@ const ContactMe = ({ data, location }) => (
     <FloatingImage
       imageMobile={data.floatingImageMobile.childImageSharp.fixed}
       imageDesktop={data.floatingImageMobile.childImageSharp.fixed}
-      title={`“${data.floatingImage.title}” by ${data.floatingImage.credit}`}
+      // title={`“${data.floatingImage.title}” by ${data.floatingImage.credit}`}
       backgroundColor="#DB3225"
     />
     <p>
@@ -56,27 +56,27 @@ export const query = graphql`
         }
       }
     }
-    floatingImage: unsplashImagesYaml(title: { eq: "Pug with red hat" }) {
-      credit
-      title
-      localFile {
-        childImageSharp {
-          fixed(width: 200) {
-            ...GatsbyImageSharpFixed_noBase64
-          }
-        }
-      }
-    }
-    fullWidthImage: unsplashImagesYaml(title: { eq: "Cacti" }) {
-      credit
-      title
-      localFile {
-        childImageSharp {
-          fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid_noBase64
-          }
-        }
-      }
-    }
+    # floatingImage: unsplashImagesYaml(title: { eq: "Pug with red hat" }) {
+    #   credit
+    #   title
+    #   localFile {
+    #     childImageSharp {
+    #       fixed(width: 200) {
+    #         ...GatsbyImageSharpFixed_noBase64
+    #       }
+    #     }
+    #   }
+    # }
+    # fullWidthImage: unsplashImagesYaml(title: { eq: "Cacti" }) {
+    #   credit
+    #   title
+    #   localFile {
+    #     childImageSharp {
+    #       fluid(maxWidth: 600) {
+    #         ...GatsbyImageSharpFluid_noBase64
+    #       }
+    #     }
+    #   }
+    # }
   }
 `

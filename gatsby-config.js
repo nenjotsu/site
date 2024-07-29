@@ -18,11 +18,11 @@ module.exports = {
       },
     },
     `gatsby-transformer-yaml`,
-    {
-      resolve: `gatsby-source-remote-images`,
-      options: {
-        filter: node => node.internal.type === `UnsplashImagesYaml`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-remote-images`,
+    //   options: {
+    //     filter: node => node.internal.type === `UnsplashImagesYaml`,
+    //   },
+    // },
   ],
 }

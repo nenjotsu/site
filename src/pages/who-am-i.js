@@ -10,7 +10,7 @@ const WhoAmI = ({ data, location }) => (
   <Layout
     location={location}
     image={data.coverImage.childImageSharp.fluid}
-    imageTitle={`“${data.coverImage.title}” by ${data.coverImage.credit} (via unsplash.com)`}
+    // imageTitle={`“${data.coverImage.title}” by ${data.coverImage.credit} (via unsplash.com)`}
   >
     <PageTitle>Who am I?</PageTitle>
     {/* <FloatingImage
@@ -54,36 +54,36 @@ export const query = graphql`
         }
       }
     }
-    floatingImageMobile: unsplashImagesYaml(title: { eq: "Cacti" }) {
-      localFile {
-        childImageSharp {
-          fixed(width: 120) {
-            ...GatsbyImageSharpFixed_withWebp
-          }
-        }
-      }
-    }
-    floatingImage: unsplashImagesYaml(title: { eq: "Cacti" }) {
-      credit
-      title
-      localFile {
-        childImageSharp {
-          fixed(width: 200) {
-            ...GatsbyImageSharpFixed_withWebp
-          }
-        }
-      }
-    }
-    fullWidthImage: unsplashImagesYaml(title: { eq: "Tennis court" }) {
-      credit
-      title
-      localFile {
-        childImageSharp {
-          fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
+    # floatingImageMobile: unsplashImagesYaml(title: { eq: "Cacti" }) {
+    #   localFile {
+    #     childImageSharp {
+    #       fixed(width: 120) {
+    #         ...GatsbyImageSharpFixed_withWebp
+    #       }
+    #     }
+    #   }
+    # }
+    # floatingImage: unsplashImagesYaml(title: { eq: "Cacti" }) {
+    #   credit
+    #   title
+    #   localFile {
+    #     childImageSharp {
+    #       fixed(width: 200) {
+    #         ...GatsbyImageSharpFixed_withWebp
+    #       }
+    #     }
+    #   }
+    # }
+    # fullWidthImage: unsplashImagesYaml(title: { eq: "Tennis court" }) {
+    #   credit
+    #   title
+    #   localFile {
+    #     childImageSharp {
+    #       fluid(maxWidth: 600) {
+    #         ...GatsbyImageSharpFluid_withWebp
+    #       }
+    #     }
+    #   }
+    # }
   }
 `
