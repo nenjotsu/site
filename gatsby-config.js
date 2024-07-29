@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/site',
   plugins: [
     `gatsby-plugin-emotion`,
     `gatsby-plugin-netlify`,
