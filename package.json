@@ -1,8 +1,8 @@
 {
-  "name": "using-gatsby-image",
+  "name": "nenjotsu-site",
   "private": true,
-  "description": "Gatsby example site using using-gatsby-image",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "nenjotsu site",
+  "author": "Nenjotsu <nenjotsu@protonmail.com>",
   "dependencies": {
     "@emotion/core": "^10.0.35",
     "@emotion/styled": "^10.0.27",
