@@ -9,7 +9,7 @@ const NotFound = ({ data, location }) => (
   <Layout
     location={location}
     image={data.coverImage.childImageSharp.fluid}
-    // imageTitle={`“${data.coverImage.title}” by ${data.coverImage.credit}`}
+    imageTitle={`“erik-mclean-Rg-fYTQ5Rgw-unsplash” by erik-mclean via unsplash`}
     imageBackgroundColor="#F0C450"
   >
     <PageTitle>Oops! Page Not Found</PageTitle>
@@ -28,7 +28,7 @@ export default NotFound
 export const query = graphql`
   query {
     coverImage: file(
-      relativePath: { regex: "/small-plants/" }
+      relativePath: { regex: "/erik-mclean-404/" }
     ) {
       childImageSharp {
         fluid(
