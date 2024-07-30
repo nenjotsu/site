@@ -9,15 +9,14 @@ const ContactMe = ({ data, location }) => (
   <Layout
     location={location}
     image={data.coverImage.childImageSharp.fluid}
-    title="small plants"
-    // imageTitle={`“${data.coverImage.title}” by ${data.coverImage.credit}`}
+    imageTitle={`“alexander-andrews-HgUDpaGPTEA-unsplash-edited” by alexander-andrews via unsplash`}
     imageBackgroundColor="#F0C450"
   >
     <PageTitle>accounts</PageTitle>
     {/* <FloatingImage
-      title="thinking about something new"
       imageMobile={data.floatingImageMobile.childImageSharp.fixed}
       imageDesktop={data.floatingImageMobile.childImageSharp.fixed}
+      title={`thinking about something new`}
       // title={`“${data.floatingImage.title}” by ${data.floatingImage.credit}`}
       backgroundColor="#DB3225"
     /> */}
@@ -39,7 +38,7 @@ export default ContactMe
 export const query = graphql`
   query {
     coverImage: file(
-      relativePath: { regex: "/small-plants/" }
+      relativePath: { regex: "/alexander-andrews-phone/" }
     ) {
       childImageSharp {
         fluid(
@@ -50,15 +49,15 @@ export const query = graphql`
         }
       }
     }
-    floatingImageMobile: file(
-      relativePath: { regex: "/thinking/" }
-    ) {
-      childImageSharp {
-        fixed(width: 200) {
-          ...GatsbyImageSharpFixed_noBase64
-        }
-      }
-    }
+    # floatingImageMobile: file(
+    #   relativePath: { regex: "/thinking/" }
+    # ) {
+    #   childImageSharp {
+    #     fixed(width: 200) {
+    #       ...GatsbyImageSharpFixed_noBase64
+    #     }
+    #   }
+    # }
     # floatingImage: unsplashImagesYaml(title: { eq: "Pug with red hat" }) {
     #   credit
     #   title
