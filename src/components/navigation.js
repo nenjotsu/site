@@ -118,6 +118,7 @@ const NavList = styled(`ul`)`
 
 const NavListItem = styled(`li`)`
   display: inline;
+  margin-right: 1em;
 
   ${mq.phablet} {
     font-size: ${scale(1).fontSize};
@@ -133,6 +134,7 @@ const NavListItem = styled(`li`)`
 const NavItem = ({ title, to }) => (
   <NavListItem
     css={css`
+      margin-right: 1em;
       &:after {
         color: ${colors.gatsby};
         content: " ╱ ";
@@ -196,12 +198,22 @@ const Navigation = () => (
             blogs 
             {` `}
             {/* <ExternalLinkIcon /> */}
+          </a>
+        </NavListItem>
+        <NavListItem>
+          <a
+            href="https://nenjotsu.github.io/blog/"
+            css={css`
+              ${linkStyle};
+            `}
+          >
+            market-analysis
             {` `}
           </a>
         </NavListItem>
         <NavItem to="/projects/" title="projects" />
-        <NavItem to="/contact-me/" title="contact me" />
-        <NavItem to="/who-am-i/" title="who am I" />
+        <NavItem to="/contact-me/" title="contact-me" />
+        <NavItem to="/who-am-i/" title="who-am-i" />
         <NavListItem>
           <a
             href="https://github.com/nenjotsu"
