@@ -19,6 +19,23 @@ module.exports = {
       },
     },
     `gatsby-transformer-yaml`,
+    {
+      resolve: 'gatsby-plugin-favicons',
+      options: {
+        logo: './src/favicon.svg',
+        appName: 'Nenjo Trade Website',
+        background: '#fff',
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          yandex: false,
+          windows: false
+        }
+      }
+    }
     // {
     //   resolve: `gatsby-source-remote-images`,
     //   options: {
