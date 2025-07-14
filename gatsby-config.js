@@ -35,7 +35,7 @@ module.exports = {
           windows: false
         }
       }
-    }
+    },
     // {
     //   resolve: `gatsby-source-remote-images`,
     //   options: {

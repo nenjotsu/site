@@ -123,10 +123,10 @@ const NavListItem = styled(`li`)`
     font-size: ${scale(1).fontSize};
   }
   ${mq.tablet} {
-    font-size: ${scale(2).fontSize};
+    font-size: ${scale(1.1).fontSize};
   }
   ${mq.xl} {
-    font-size: ${scale(3).fontSize};
+    font-size: ${scale(1.2).fontSize};
   }
 `
 
@@ -138,7 +138,7 @@ const NavItem = ({ title, to }) => (
         content: " ╱ ";
         font-weight: 300;
         opacity: 0.5;
-        font-size: 50%;
+        font-size: 5%;
         position: relative;
         bottom: 0.25rem;
         padding: 0 ${rhythm(options.blockMarginBottom / 4)};
@@ -159,7 +159,7 @@ const ExternalLinkIcon = styled(MdLink)`
   background-image: none;
   bottom: -0.2em;
   color: ${colors.gatsby};
-  font-size: 75%;
+  font-size: 1.4rem;
   position: relative;
   vertical-align: baseline;
 
@@ -185,7 +185,7 @@ const Navigation = () => (
       <NavList>
         {/* <NavItem to="/blur-up/" title="things I've learned" />
         <NavItem to="/traced-svg/" title="my works" /> */}
-        <NavItem to="/" title="home" />
+        <NavItem to="/#" title="home" />
         <NavListItem>
           <a
             href="https://nenjotsu.github.io/me/"
@@ -195,10 +195,11 @@ const Navigation = () => (
           >
             blogs 
             {` `}
-            <ExternalLinkIcon />
+            {/* <ExternalLinkIcon /> */}
             {` `}
           </a>
         </NavListItem>
+        <NavItem to="/projects/" title="projects" />
         <NavItem to="/contact-me/" title="contact me" />
         <NavItem to="/who-am-i/" title="who am I" />
         <NavListItem>
@@ -210,7 +211,7 @@ const Navigation = () => (
           >
             github
             {` `}
-            <ExternalLinkIcon />
+            {/* <ExternalLinkIcon /> */}
           </a>
         </NavListItem>
       </NavList>
