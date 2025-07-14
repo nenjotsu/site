@@ -22,7 +22,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-favicons',
       options: {
-        logo: 'src/favicon.svg',
+        logo: './src/favicon.svg',
         appName: 'Nenjo Trade Website',
         background: '#fff',
         icons: {
