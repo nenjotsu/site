@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "name": "Nenjo Trade Website",
+  "description": "nenjotsu site",
+  "icons": {
+    "60": "/site/favicons/firefox_app_60x60.png",
+    "128": "/site/favicons/firefox_app_128x128.png",
+    "512": "/site/favicons/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": "Nenjotsu",
+    "url": null
+  }
+}
