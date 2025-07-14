@@ -11,7 +11,7 @@ const Projects = ({ data, location }) => (
   <Layout
     location={location}
     image={data.coverImage.childImageSharp.fluid}
-    imageTitle={`${data.coverImage.title}`}
+    imageTitle="Previous Projects"
   >
     <PageTitle>Projects</PageTitle>
     
