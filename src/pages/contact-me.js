@@ -27,6 +27,18 @@ const ContactMe = ({ data, location }) => (
       backgroundColor="#F9D6CE"
       title={`“${data.fullWidthImage.title}” by ${data.fullWidthImage.credit}`}
     /> */}
+    <div>
+      <a href="https://nowpayments.io/donation/nenjotrades" target="_blank" rel="noreferrer noopener">
+        <img src="https://nowpayments.io/images/embeds/donation-button-white.svg" alt="Cryptocurrency & Bitcoin donation button by NOWPayments" />
+      </a>
+    </div>
+    <div>
+      <a href="https://nowpayments.io/donation/nenjotrades" target="_blank" rel="noreferrer noopener">
+        Donate with NOWPayments
+      </a>
+    </div>
+    
+    
   </Layout>
 )
 

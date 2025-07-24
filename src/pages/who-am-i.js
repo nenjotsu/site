@@ -35,6 +35,16 @@ const WhoAmI = ({ data, location }) => (
       title={`“${data.fullWidthImage.title}” by ${data.fullWidthImage.credit} (via unsplash.com)`}
     />
     <p /> */}
+    <div>
+      <a href="https://nowpayments.io/donation/nenjotrades" target="_blank" rel="noreferrer noopener">
+        <img src="https://nowpayments.io/images/embeds/donation-button-white.svg" alt="Cryptocurrency & Bitcoin donation button by NOWPayments" />
+      </a>
+    </div>
+    <div>
+      <a href="https://nowpayments.io/donation/nenjotrades" target="_blank" rel="noreferrer noopener">
+        Donate with NOWPayments
+      </a>
+    </div>
   </Layout>
 )
 
